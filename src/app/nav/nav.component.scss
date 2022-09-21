@@ -1,0 +1,45 @@
+.nav__container {
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: red;
+    padding-left: 20px;
+}
+
+.nav__routes {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 100%;
+}
+
+.nav__route {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 12px;
+    border-radius: 5px;
+    margin: auto 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav__others {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.nav__user {
+    background-color: beige;
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin-right: 30px;
+}

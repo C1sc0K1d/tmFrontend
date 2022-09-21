@@ -1,0 +1,28 @@
+<form [formGroup]="form" (ngSubmit)="submit()" class="user-transf__container">
+    <h1 class="user-transf__tittle">Agendar tranferência</h1>
+    <div class="user-transf__inputs_container">
+        <div class="user-transf__inputs">
+            <label class="user-transf__label" for="originAccount">Conta de origem</label>
+            <input class="user-transf__input" type="number" id="originAccount" name="originAccount" formControlName="originAccount">
+        </div>
+        <div class="user-transf__inputs">
+            <label class="user-transf__label" for="destinationAccount">Conta de destino</label>
+            <input class="user-transf__input" type="number" id="destinationAccount" name="destinationAccount" formControlName="destinationAccount">
+        </div>
+    </div>
+    <div class="user-transf__inputs_container">
+        <div class="user-transf__inputs">
+            <label class="user-transf__label" for="transferValue">Valor</label>
+            <input class="user-transf__input" type="number" id="transferValue" name="transferValue" formControlName="transferValue">
+        </div>
+        <div class="user-transf__inputs">
+            <label class="user-transf__label" for="transferDate">Data</label>
+            <input class="user-transf__input" type="date" id="transferDate" name="transferDate" formControlName="transferDate">
+        </div>
+    </div>
+    <div class="user-transf__inputs_container" style="justify-content: flex-end;">
+        <div class="user-transf__inputs">
+            <button class="user-transf__input" type="submit" [disabled]="!form.valid">Transferir</button>
+        </div>
+    </div>
+</form>

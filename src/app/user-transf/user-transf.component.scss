@@ -1,0 +1,34 @@
+.user-transf__container {
+    background-color: lightgray;
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+}
+
+.user-transf__tittle {
+    margin: 50px 50px 0 50px;
+}
+
+.user-transf__inputs_container {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+}
+
+.user-transf__inputs {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px 0 0;
+}
+
+.user-transf__label {
+    font-size: 13px;
+    margin: 3px;
+}
+
+.user-transf__input {
+    padding: 10px 10px;
+    font-size: 21px;
+    width: 250px;
+    border-radius: 3px;
+}
