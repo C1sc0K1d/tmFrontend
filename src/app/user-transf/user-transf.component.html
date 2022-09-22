@@ -26,3 +26,19 @@
         </div>
     </div>
 </form>
+<div [ngClass]="{'user-transf__tranferences': hidden, 'user-transf__tranferences__off': !hidden}">
+    <div class="user-transf__tranferences_container">
+        <div (click)="hid()" style="text-align: right; font-size: 24px; margin: 5px;">X</div>
+        <div class="user-transf__tranferences_values">
+            <div style="display: flex; flex-direction: column; flex-wrap: wrap; margin-top: 20px;" *ngFor="let tranference of tranferences">
+                <span class="user-transf__value">id: {{ tranference.id }}</span>
+                <span class="user-transf__value">Conta de origem: {{ tranference.accountOrigin }}</span>
+                <span class="user-transf__value">Conta de destino: {{ tranference.destiniAccount }}</span>
+                <span class="user-transf__value">Valor da tranferencia: {{ tranference.transferValue }}</span>
+                <span class="user-transf__value">Taxa: {{ tranference.tax }}</span>
+                <span class="user-transf__value">Data da tranferencia: {{ tranference.transferDate }}</span>
+                <span class="user-transf__value">Data agendada da tranferencia: {{ tranference.transferAppointmentDate }}</span>
+            </div>
+        </div>
+    </div>
+</div>
